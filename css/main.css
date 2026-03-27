@@ -10,7 +10,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
     font-family: "titlefont";
-    src: url("../assests/fonts/Mythology\ Of\ Egypt.otf");
+    src: url("/assests/fonts/Mythology\ Of\ Egypt.otf");
+}
+
+@font-face {
+    font-family: "metamorphous";
+    src: url("/assests/fonts/Metamorphous-Regular.ttf");
 }
 
 .hero {
@@ -18,12 +23,91 @@ h1, h2, h3, h4, h5, h6 {
     width: 100vw;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .hero img{
-    width: 100;
-    height: 100;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
+}
+
+.heroText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    max-width: 400px;
+    color: #fff;
+}
+
+.adopthero {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adopthero img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.adoptsubhero {
+    display: flex;
+    flex-direction: column;
+    background-color: #002d68;
+}
+
+.heroText2{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    max-width: 400px;
+    color: #fff;
+}
+
+.pageTitle{
+    color: #e9ad1c;
+    font-family: "titlefont", sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.pageTitle2{
+    color: #fff;
+    font-family: "titlefont", sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.heroSubtitle {
+    font-family: "metamorphous", serif;
+}
+
+.heroSubtitle2 {
+    color: #e9ad1c;
+    font-family: "metamorphous", serif;
+    display: flex;
+    justify-content: center;
+}
+
+.adoptsubhero {
+    color: #fff;
+    font-family: 'Poppins', serif;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -89,7 +173,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     background-color: #002d68;
+}
+
+.introText h2{
+    color: #e9ad1c;
+    font-family: 'Poppins', serif;
+    font-size: 2rem;
+}
+
+.introText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.introButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #4ed9f0;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.introButton:hover {
+    background-color: #fff;
+}
+
+.carousel-inner img{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    size: 50%;
+}
+
+.Sanctuary{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.Sanctuary h2{
+    color: #15d5f5;
+}
+
+.SanctuaryText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sanctuary-img img{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    size: 50%;
 }
 
 .past-friends {
@@ -100,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .past-friends h3 {
     color: #e9ad1c;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', serif;
     font-size: 2rem;
 }
 
@@ -121,3 +273,136 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerText-2 .social h4{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.footerText-2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.filter{
+    width: 100%;
+    background-color: #e9ad1c;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.creature-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    border-radius: 15px;
+}
+
+.creature-cardBlue{
+    background-color: #002d68;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    border-radius: 15px;
+}
+
+.contactSection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.contactSection h2{
+    color: #15d5f5;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactSection{
+    padding: 60px 40px;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contactInfo, .contactForm{
+    width: 40%;
+    padding: 20px;
+}
+
+.contactForm form{
+    padding: 20px;
+    gap: 10px;
+    background-image: url(../assests/img/formBackground.png);
+    border-radius: 20px;
+}
+
+.FormElement{
+    width: 100%;
+    padding: 10px;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea{
+    width: 95%;
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Poppins';
+}
+
+.contactForm button{
+    padding: 12px;
+    margin-left: 10px;
+    background-color: #222;
+    color: #ccc;
+    font-family: 'Poppins';
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.contactForm button:hover{
+    background-color: #15d5f5;
+    color: #000;
+}
